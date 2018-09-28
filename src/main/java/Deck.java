@@ -12,7 +12,7 @@ public class Deck {
 //         method private so it cannot be done twice in any other class, then shuffleDeck
 //      and take that out of the populate
 
-//        populateDeck();
+        populateDeck();
 //        shuffleDeck();
     }
 

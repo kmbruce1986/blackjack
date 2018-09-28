@@ -15,26 +15,20 @@ public class DeckTest {
         card = new Card(Suit.CLUBS, Rank.ACE);
     }
 
-    @Test
-    public void deckStartsEmpty() {
-        assertEquals(0, deck.countCards());
-    }
 
     @Test
     public void canAddCard() {
         deck.addCard(card);
-        assertEquals(1, deck.countCards());
+        assertEquals(53, deck.countCards());
     }
 
         @Test
     public void canPopulateDeck() {
-        deck.populateDeck();
         assertEquals(52, deck.countCards());
     }
 
     @Test
     public void canDealCard() {
-        deck.populateDeck();
         assertNotNull(deck.dealCard());
         assertEquals(51, deck.countCards());
     }
