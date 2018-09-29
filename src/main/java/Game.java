@@ -14,8 +14,10 @@ public class Game {
 
     public void dealEachPlayerACard() {
         for (Player player : this.players) {
-            Card card = dealer.deal(deck);
-            player.addCard(card);
+            Card card1 = dealer.deal(deck);
+            player.addCard(card1);
+            Card card2 = dealer.deal(deck);
+            player.addCard(card2);
         }
     }
 
@@ -51,6 +53,10 @@ public class Game {
             }
         }
         return draw;
+    }
+
+    public void play(){
+        dealEachPlayerACard();
     }
 
 }

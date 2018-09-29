@@ -8,6 +8,8 @@ public class DealerTest {
 
     Dealer dealer;
     Deck deck;
+    Player player1;
+    Player player2;
 
     @Before
     public void setUp() {
@@ -22,5 +24,7 @@ public class DealerTest {
         assertNotNull(card);
         assertEquals(51, deck.countCards());
     }
+
+
 
 }

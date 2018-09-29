@@ -37,12 +37,6 @@ public class PlayerTest {
         assertEquals(1, player.countCardsInHand());
     }
 
-    @Test
-    public void cannotAddCardIfCardInHand() {
-        player.addCard(card);
-        player.addCard(card);
-        assertEquals(1, player.countCardsInHand());
-    }
 
     @Test
     public void canRemoveCard() {

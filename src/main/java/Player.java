@@ -21,8 +21,7 @@ public class Player {
 
 //  this will need to be amended if you make a game requiring each player to have more than one card
     public void addCard(Card card) {
-        if (countCardsInHand() == 0){
-        this.hand.add(card);}
+        this.hand.add(card);
     }
 
     public void removeCard(Card card) {
