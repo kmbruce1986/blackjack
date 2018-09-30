@@ -5,14 +5,20 @@ public class Player {
 
     private String name;
     private ArrayList<Card> hand;
+    private boolean isDealer;
 
-    public Player(String name){
+    public Player(String name, boolean isDealer){
         this.name = name;
         this.hand = new ArrayList<>();
+        this.isDealer = isDealer;
     }
 
     public String getName() {
         return name;
+    }
+
+    public boolean isDealer() {
+        return isDealer;
     }
 
     public int countCardsInHand() {

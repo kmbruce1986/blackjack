@@ -13,7 +13,7 @@ public class PlayerTest {
     @Before
     public void setUp() {
         card = new Card(Suit.CLUBS, Rank.ACE);
-        player = new Player("Marvin");
+        player = new Player("Marvin", true);
     }
 
     @Test
@@ -49,5 +49,10 @@ public class PlayerTest {
     public void hadHandValue() {
         player.addCard(card);
         assertEquals(1, player.getHandValue());
+    }
+
+    @Test
+    public void checksIfPlayerIsDealer() {
+        assertEquals(true, player.isDealer());
     }
 }

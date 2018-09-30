@@ -17,8 +17,8 @@ public class GameTest {
 
     @Before
     public void setUp() {
-        player1 = new Player("Marvin");
-        player2 = new Player("John");
+        player1 = new Player("Marvin", true);
+        player2 = new Player("John", false);
         ArrayList<Player> players = new ArrayList<>();
         players.add(player1);
         players.add(player2);
@@ -29,7 +29,7 @@ public class GameTest {
 
         @Test
         public void testCanDealEachPlayerACard() {
-        game.dealEachPlayerACard();
+        game.dealEachPlayerTwoCards();
         assertEquals(2, player1.countCardsInHand());
         assertEquals(2, player2.countCardsInHand());
         assertEquals(48, deck.countCards());

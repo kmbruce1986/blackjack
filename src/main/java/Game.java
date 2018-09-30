@@ -12,7 +12,7 @@ public class Game {
         this.deck = deck;
     }
 
-    public void dealEachPlayerACard() {
+    public void dealEachPlayerTwoCards() {
         for (Player player : this.players) {
             Card card1 = dealer.deal(deck);
             player.addCard(card1);
@@ -56,7 +56,7 @@ public class Game {
     }
 
     public void play(){
-        dealEachPlayerACard();
+        dealEachPlayerTwoCards();
     }
 
 }
